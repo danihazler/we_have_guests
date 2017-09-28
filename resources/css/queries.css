@@ -1,0 +1,56 @@
+@media (max-width: 900px) {
+
+  .recipe {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 680px) {
+
+  body {
+    margin-bottom: 100px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .recipe {
+    padding-bottom: 0;
+  }
+
+  .method {
+    padding-right: 18px;
+  }
+
+  .social-links {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  header.wrap-row {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .recipe {
+    padding-top: 50px;
+  }
+
+  .partners img {
+    max-width: 100px;
+  }
+
+  .social-links img {
+    width: 40px;
+  }
+}
