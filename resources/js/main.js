@@ -2,7 +2,6 @@ $(document).on("scroll", function(){
   var pixelsFromTop= $(document).scrollTop();
 
 // HIDDEN THE HEADER ---------------------------
-
   if (pixelsFromTop > 50) {
     $("header").addClass("hidden");
   } else {
