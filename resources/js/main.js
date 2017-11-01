@@ -1,7 +1,7 @@
 $(document).on("scroll", function(){
   var pixelsFromTop= $(document).scrollTop();
 
-// HIDDEN THE HEADER ---------------------------
+// HIDING THE HEADER ---------------------------
   if (pixelsFromTop > 50) {
     $("header").addClass("hidden");
   } else {
@@ -44,3 +44,16 @@ $('.open-recipe, .img-open').on('click', function () {
 $('.modal-close, .modal-content').on('click', function () {
   $(this).closest('.recipe').find('.modal').removeClass('visible');
 });
+
+//  ----------- SCROLL TO THE TOP ------------
+$(window).scroll(function(){
+		if ($(this).scrollTop() > 300) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
