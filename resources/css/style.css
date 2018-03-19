@@ -101,6 +101,12 @@ nav a:hover {
   height: auto;
 }
 
+.recipe-img figcaption {
+  font-size: 0.9rem;
+  font-style:  italic;
+  text-align:  center;
+}
+
 /* -------------- RECIPE MODAL and CONTENT -----------------------*/
 .modal {
   position: fixed;
